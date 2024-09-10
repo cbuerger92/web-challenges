@@ -13,13 +13,13 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #bac4c9;
+  background-color: rgb(186, 196, 201);
   transition: 0.4s ease;
 }
 
 body.dark {
   background-color: rgb(50, 51, 58);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .button {
@@ -36,16 +36,16 @@ body.dark {
 }
 
 .button--light {
-  background-color: #bac4c9;
-  color: black;
+  background-color: rgb(186, 196, 201);
+  color: rgb(0, 0, 0);
 }
 
 .button--dark {
   background-color: rgb(50, 51, 58);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .button--toggle {
   background-color: rgb(28, 117, 235);
-  color: black;
+  color: rgb(0, 0, 0);
 }
