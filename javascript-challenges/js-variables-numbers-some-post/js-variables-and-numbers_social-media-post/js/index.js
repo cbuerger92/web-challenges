@@ -11,11 +11,11 @@ console.clear();
 
 // --v-- write your code here --v--
 
-const title = "My First Post";
-const text = "This is a simple post on social media!";
-let likes = 100;
-const user = "Christina";
-const isReported = false;
+const title = "Social Media Post";
+const text = "Hier steht der Text";
+let likes = 34;
+const user = 12;
+const isReported = true;
 
 // --^-- write your code here --^--
 
@@ -26,16 +26,19 @@ const isReported = false;
 // --v-- write your code here --v--
 
 // Log alle Variablen
-console.log("Title:", title);
-console.log("Text:", text);
-console.log("Likes:", likes);
-console.log("User:", user);
-console.log("Is Reported:", isReported);
+
+console.log(title);
+console.log(text);
+console.log(likes);
+console.log(user);
+console.log(isReported);
 
 // Erhöhe die Anzahl der Likes um 1
-likes += 1;
+
+likes++;
 
 // Log die Anzahl der Likes erneut
-console.log("Updated Likes:", likes);
+
+console.log(likes);
 
 // --^-- write your code here --^--

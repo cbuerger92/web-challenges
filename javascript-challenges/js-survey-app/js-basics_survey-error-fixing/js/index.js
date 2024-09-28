@@ -9,7 +9,7 @@ nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });*/
 
-const nextButton = document.querySelector(".steps-button");
+const nextButton = document.querySelector('[data-js="next-button"]');
 nextButton.addEventListener("click", () => {
   console.log("Go to next question");
 });
@@ -28,11 +28,6 @@ prevButton.addEventListener("click", () => {
 
 // ------------------ 3 & 4 -----------------
 
-const firstChoiceButton = document.querySelector('[data-js="choice-button-1"]');
-const secondChoiceButton = document.querySelector(
-  '[data-js="choice-button-2"]'
-);
-
 // 3. This event listener is connected properly. When clicked the button is shown active. However, the debug message doesn't appear in the debug console. Where is the error with this code?
 /*firstChoiceButton.addEventListener("click", () => {
   firstChoiceButton.classList.add("active-choice");
@@ -40,10 +35,15 @@ const secondChoiceButton = document.querySelector(
   console("Selected first choice");
 });*/
 
+const firstChoiceButton = document.querySelector('[data-js="choice-button-1"]');
+const secondChoiceButton = document.querySelector(
+  '[data-js="choice-button-2"]'
+);
+
 firstChoiceButton.addEventListener("click", () => {
-  firstChoiceButton.classList.add("active-choice");
-  secondChoiceButton.classList.remove("active-choice");
-  console.log("Selected first choice");
+  firstChoiceButton.classList.add("active-choice"); // Fügt dem ersten Button die Klasse "active-choice" hinzu
+  secondChoiceButton.classList.remove("active-choice"); // Entfernt die Klasse "active-choice" vom zweiten Button
+  console.log("Selected first choice"); // Gibt die Nachricht in der Konsole aus
 });
 
 // 4. When clicking on the second choice, the button should be shown with an active state. Do you see why it isn't working?
