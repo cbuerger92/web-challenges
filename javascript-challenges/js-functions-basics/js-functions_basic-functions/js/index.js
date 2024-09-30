@@ -10,10 +10,10 @@ console.clear();
 
 // --v-- write your code here --v--
 
-const bookTitle = "basic-functions";
-const author = "Max Mustermann";
-let rating = 3.5;
-let numberOfSales = 5000;
+const bookTitle = "Sonnenschein";
+const author = "Christina";
+let rating = 2;
+let numberOfSales = 500;
 
 // --^-- write your code here --^--
 
@@ -31,27 +31,14 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
-// In die Konsole einloggen
+/* console.log(`Title: ${bookTitle}`);
+console.log(`Author: ${author}`);
+console.log(`Rating: ${rating}`);
+console.log(`Number of Sales: ${numberOfSales}`);
 
-console.log("Original Information:");
-console.log("Title:", bookTitle);
-console.log("Author:", author);
-console.log("Rating:", rating);
-console.log("Sales", numberOfSales);
+numberOfSales++;
 
-// Erhöhung
-
-numberOfSales += 200;
-rating = 4.9;
-
-// Nochmal einloggen
-// n für Umbruch und Namen für alte und neue Infos
-
-console.log("\nUpdated Information:");
-console.log("Title:", bookTitle);
-console.log("Author:", author);
-console.log("Rating:", rating);
-console.log("Sales", numberOfSales);
+console.log(`Number of Sales: ${numberOfSales}`); */
 
 // --^-- write your code here --^--
 
@@ -66,14 +53,21 @@ console.log("Sales", numberOfSales);
 // --v-- write your code here --v--
 
 function logBookData() {
-  console.log(""); // Leerzeile
-  console.log("Funktion zum Loggen der Buchdaten");
-  console.log("Title:", bookTitle);
-  console.log("Author:", author);
-  console.log("Rating:", rating);
-  console.log("Sales:", numberOfSales);
+  console.log(`Title: ${bookTitle}`);
+  console.log(`Author: ${author}`);
+  console.log(`Rating: ${rating}`);
+  console.log(`Number of Sales: ${numberOfSales}`);
 }
+logBookData();
 
+console.log("______________________________");
+
+numberOfSales++;
+logBookData();
+
+console.log("______________________________");
+
+numberOfSales++;
 logBookData();
 
 // --^-- write your code here --^--
