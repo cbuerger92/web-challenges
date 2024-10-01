@@ -19,10 +19,10 @@ const personAlex = {
   age: 24,
 };
 
-const nameOfAlex = personAlex.name;
-const ageOfAlex = personAlex.age;
+const name = personAlex.name;
+const age = personAlex.age;
 
-console.log(nameOfAlex, ageOfAlex);
+console.log(name, age);
 
 // EXERCISE 3
 // Change the value of name to "Alex" and the value of age to "35" by updating the object personToChange: person.existingProperty = newValue.
@@ -50,10 +50,4 @@ petPluto.breed = "husky";
 
 console.log(petPluto);
 
-export {
-  personWithNameAgeEmail,
-  nameOfAlex,
-  ageOfAlex,
-  personToChange,
-  petPluto,
-};
+export { personWithNameAgeEmail, name, age, personToChange, petPluto };

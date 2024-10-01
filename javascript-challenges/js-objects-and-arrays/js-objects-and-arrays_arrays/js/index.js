@@ -18,7 +18,10 @@ const nestedArray = ["example", 10, true, [1, 2, 3]];
 const numbers = [20, 10, 50];
 
 const firstNumber = numbers[0];
-/* console.log(firstNumber); */
+const secondNumber = numbers[1];
+
+console.log(firstNumber);
+console.log(secondNumber);
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
@@ -41,21 +44,33 @@ console.log(nestedNumber);
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
+petsWithPush.push("rat");
+
+console.log(petsWithPush);
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
 
 const fruitsWithPop = ["apple", "banana", "mango"];
+fruitsWithPop.pop("mango");
+
+console.log(fruitsWithPop);
 
 // EXERCISE 8
 // Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
 
 const unshiftedPets = ["dog", "cat", "rabbit"];
+unshiftedPets.unshift("hamster");
+
+console.log(unshiftedPets);
 
 // EXERCISE 9
 // Use the shift method to remove the first item from shiftedFruits.
 
 const shiftedFruits = ["apple", "banana", "mango"];
+shiftedFruits.shift("apple");
+
+console.log(shiftedFruits);
 
 export {
   exampleArray,
