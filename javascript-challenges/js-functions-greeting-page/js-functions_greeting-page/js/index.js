@@ -23,7 +23,7 @@ Change the contents of this page depending on the current day and time.
 const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
-  const currentHour = new Date().getHours();
+  const currentHour = new Date().getHours(); // aktuelles Datum und Uhrzeit basierend auf Systemzeit
   if (currentHour >= 6 && currentHour <= 12) return "Good Morning";
   if (currentHour >= 13 && currentHour <= 18) return "Good Afternoon";
   if (currentHour >= 19 && currentHour <= 22) return "Good Evening";
@@ -31,7 +31,7 @@ function getGreeting() {
 }
 
 function getDayColor() {
-  const typeOfDay = new Date().getDay();
+  const typeOfDay = new Date().getDay(); // aktueller Wochentag als Ganzzahl: 0 (Sonntag) bis 6 (Samstag)
 
   if (typeOfDay === 1) return "darkgray";
   if (typeOfDay === 2 || typeOfDay === 3 || typeOfDay === 4 || typeOfDay === 5)
@@ -40,4 +40,17 @@ function getDayColor() {
 }
 
 display.textContent = getGreeting();
+
+/*
+Durch diese Zuweisung wird der Textinhalt des display-Elements (definiertes DOM-Element zB div oder p)
+auf den Wert gesetzt, der von der Funktion getGreeting() zurückgegeben wird. Das bedeutet, dass der angezeigte
+Text auf der Webseite aktualisiert wird, um die Begrüßung anzuzeigen.
+*/
+
 document.body.style.backgroundColor = getDayColor();
+
+/*
+Durch diese Zuweisung wird die Hintergrundfarbe des <body>-Elements auf den Wert gesetzt,
+der von der Funktion getDayColor() zurückgegeben wird. Das bedeutet, dass sich die
+Hintergrundfarbe der Seite je nach Wochentag ändert.
+*/
