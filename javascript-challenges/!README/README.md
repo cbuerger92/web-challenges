@@ -227,3 +227,67 @@ parent.append(child1, child2, 'Some text'); // Fügt mehrere Elemente und Text h
 Wird verwendet, um die Klassen eines HTML-Elements zu bearbeiten. Klassen beeinflussen das Styling und manchmal auch das Verhalten eines Elements in deiner Seite durch CSS und JavaScript.
 
 Verwende .classList.add() oder .classList.remove(), um einem Element neue CSS-Klassen hinzuzufügen oder zu entfernen.
+
+## loops
+
+JavaScript-Loops sind eine Möglichkeit, Codeblöcke wiederholt auszuführen, ohne denselben Code immer wieder manuell schreiben zu müssen.
+
+## for-loop
+
+Der for-Loop wird verwendet, wenn du eine bekannte Anzahl von Wiederholungen hast. Er hat drei Teile:
+
+Initialisierung: Eine Variable wird gesetzt, meist ein Zähler (let i = 0).
+
+Bedingung: Der Loop läuft, solange diese Bedingung wahr ist (i < 10).
+
+Inkrementierung: Nach jeder Iteration wird der Zähler erhöht (i++).
+
+## while-loop
+
+Der while-Loop wird verwendet, wenn du nicht genau weißt, wie oft der Code ausgeführt werden muss, aber eine Bedingung wahr bleiben soll.
+
+## Iterable
+
+Ein iterable ist ein Objekt, das durch seine Werte durchlaufen werden kann. In JavaScript sind alle Objekte, die die Symbol.iterator-Methode implementieren, als iterable klassifiziert.
+
+## Iterieren
+
+Iterieren bedeutet, durch die Elemente eines iterable Objekts nacheinander zu gehen und mit jedem Element etwas zu tun. Wenn du eine Schleife verwendest, um durch die Werte eines Arrays zu gehen oder die Zeichen eines Strings zu verarbeiten, führst du eine Iteration durch.
+
+Ein Iterator ist ein Objekt, das die Methode next() hat, die bei jedem Aufruf das nächste Element eines iterierbaren Objekts zurückgibt.
+
+## Symbol.iterator
+
+Symbol.iterator ist eine eingebaute Symbol-Konstante in JavaScript, die verwendet wird, um eine Methode zu definieren, die ein Iterator-Objekt zurückgibt.
+
+## Array
+
+Ein Array ist eine Datenstruktur in JavaScript (und vielen anderen Programmiersprachen), die eine geordnete Sammlung von Werten speichert. Arrays ermöglichen es dir, mehrere Werte in einer einzigen Variablen zu speichern und einfach auf sie zuzugreifen.
+
+Syntax:
+Ein Array wird in JavaScript mit eckigen Klammern ([]) erstellt:
+const fruits = ['Apple', 'Banana', 'Cherry'];
+
+Methoden:
+
+push(): Fügt ein oder mehrere Elemente am Ende des Arrays hinzu.
+
+pop(): Entfernt das letzte Element des Arrays und gibt es zurück.
+
+shift(): Entfernt das erste Element des Arrays und gibt es zurück.
+
+unshift(): Fügt ein oder mehrere Elemente am Anfang des Arrays hinzu.
+
+forEach(): Führt eine Funktion für jedes Element im Array aus.
+
+map(): Erstellt ein neues Array mit den Ergebnissen der Anwendung einer Funktion auf jedes Element.
+
+filter(): Erstellt ein neues Array mit allen Elementen, die einen bestimmten Test bestehen.
+
+## callback function
+
+Eine Callback-Funktion ist eine Funktion, die als Argument an eine andere Funktion übergeben wird und zu einem späteren Zeitpunkt ausgeführt wird. Callback-Funktionen sind ein zentrales Konzept in JavaScript, insbesondere im Zusammenhang mit asynchronem Programmieren und Ereignisbehandlung.
+
+## Argumente
+
+Ein Argument in JavaScript ist ein Wert, den du an eine Funktion übergibst, wenn du sie aufrufst. Die Funktion kann diesen Wert dann innerhalb ihres Codes verwenden. Argumente sind also die tatsächlichen Werte, die du der Funktion beim Aufruf gibst.
