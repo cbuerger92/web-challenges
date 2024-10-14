@@ -12,9 +12,13 @@ In React ist jede Komponente eine Funktion, die etwas auf dem Bildschirm anzeigt
 
 Props sind der Mechanismus, mit dem Daten von einer Komponente zu einer anderen Komponente weitergegeben werden.
 
+Props: Props (Properties) sind Daten, die du von einer Komponente an eine andere weitergibst.
+
 ## State:
 
 Der State ist der interne Zustand einer Komponente. Der State kann sich im Laufe der Zeit ändern (z. B. wenn ein Benutzer eine Eingabe macht), und wenn sich der State ändert, wird die Komponente neu gerendert.
+
+State: Das sind Daten, die in einer Komponente gespeichert und von dieser verwaltet werden. Der State bestimmt, wie die UI aussieht.
 
 useState:
 
@@ -27,3 +31,5 @@ React erlaubt es dir, auf Benutzerinteraktionen (z. B. Klicken eines Buttons) zu
 ## export default:
 
 Das sorgt dafür, dass wir eine Komponente in anderen Dateien importieren können, wenn nötig. Zum Beispiel wird sie woanders in der App benutzt.
+
+## Hook
