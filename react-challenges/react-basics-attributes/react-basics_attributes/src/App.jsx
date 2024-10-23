@@ -1,8 +1,8 @@
 import "./styles.css";
 
-/* export default function App() {
-  return <article>Replace me with an article</article>;
-} */
+export default function App() {
+  return <Article />;
+}
 
 function Article() {
   return (
@@ -20,8 +20,4 @@ function Article() {
       </a>
     </article>
   );
-}
-
-export default function App() {
-  return <Article />;
 }

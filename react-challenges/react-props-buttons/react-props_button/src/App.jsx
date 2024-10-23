@@ -18,6 +18,7 @@ export default function App() {
   );
 }
 
+
 // Task 2
 
 function Button({ color, background, disabled, text }) {
@@ -31,8 +32,6 @@ function Button({ color, background, disabled, text }) {
     </button>
   );
 }
-
-
 
 // Task 3
 

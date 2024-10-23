@@ -4,7 +4,7 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      <Sum valueA={1} valueB={2} />
+      <Sum valueA={33432132} valueB={54545454} />
     </div>
   );
 }
@@ -12,7 +12,9 @@ export default function App() {
 function Sum({ valueA, valueB }) {
   return (
     <h1>
-      {valueA} + {valueB} = {valueA + valueB}
+      {valueA} + {valueB} = {valueA + valueB} <br />
+      {valueA} - {valueB} = {valueA - valueB} <br />
+      {valueA} * {valueB} = {valueA * valueB}
     </h1>
   );
 }
