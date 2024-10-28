@@ -8,6 +8,9 @@ server.listen(port, () => {
 
 /*
 
+Wir importieren den Server aus der server.js Datei
 
+Der Server wird auf Port 8000 gestartet, und in der Konsole erscheint
+die Meldung, dass der Server läuft, sobald listen() erfolgreich ist.
 
 */

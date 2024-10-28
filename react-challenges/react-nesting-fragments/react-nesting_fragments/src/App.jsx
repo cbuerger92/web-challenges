@@ -10,11 +10,11 @@ export default function App() {
   );
 }
 
-{
-  /* <Box color="#007bff" />
+/* {
+<Box color="#007bff" />
 <Box color="#fc3" />
-<Box color="#ff3333" /> */
-}
+<Box color="#ff3333" /> 
+} */
 
 /* function Boxes() {
   return (
@@ -29,9 +29,10 @@ export default function App() {
 function Boxes() {
   return (
     <>
-      <Box color="#007bff" />
-      <Box color="#fc3" />
-      <Box color="#ff3333" />
+      <Box color="#DB992A" />
+      <Box color="#DBC42A" />
+      <Box color="#DB7E2A" />
+      <Box color="#DBDA2A" />
     </>
   );
 }

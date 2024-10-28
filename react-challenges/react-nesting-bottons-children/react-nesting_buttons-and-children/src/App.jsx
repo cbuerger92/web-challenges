@@ -4,7 +4,9 @@ import "./styles.css";
 export default function App() {
   return (
     <main>
-      <Button>Button 1</Button>
+      <Button color="blue" background="yellow">
+        Button 1
+      </Button>
       <Button>Button 2</Button>
       <Button>Button 3</Button>
       <Button>Button 4</Button>
@@ -12,9 +14,13 @@ export default function App() {
   );
 }
 
-function Button({ children }) {
+function Button({ children, color, background }) {
   return (
-    <button className="button" type="button">
+    <button
+      className="button"
+      type="button"
+      style={{ color: color, background: background }}
+    >
       {children}
     </button>
   );

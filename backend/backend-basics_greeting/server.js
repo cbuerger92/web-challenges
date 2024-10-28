@@ -1,11 +1,14 @@
 import { createServer } from "node:http";
 
-// export const server = …
+const answer = 32 + 4; // Berechnung außerhalb des Servers
 
 export const server = createServer((request, response) => {
   response.statusCode = 200;
-  response.end("Hello World!");
+  console.log(answer); // Ausgabe in der Konsole
+  response.end(`Hello World! The answer is ${answer}`); // Antwort an den Client
 });
+
+// export const server = …
 
 /*
 

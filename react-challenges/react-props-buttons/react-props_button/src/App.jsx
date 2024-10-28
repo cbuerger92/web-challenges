@@ -66,7 +66,16 @@ export default function App() {
         color="white"
         background="black"
         disabled={false}
-        text="Klick mich"
+        text="Button 1"
+        onClick={handleClick}
+      />
+      <br />
+      <br />
+      <ButtonZwei
+        color="blue"
+        background="yellow"
+        disabled={false}
+        text="Button 2"
         onClick={handleClick}
       />
     </div>
@@ -74,6 +83,18 @@ export default function App() {
 }
 
 function Button({ color, background, disabled, text, onClick }) {
+  return (
+    <button
+      style={{ color: color, background: background }}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
+}
+
+function ButtonZwei({ color, background, disabled, text, onClick }) {
   return (
     <button
       style={{ color: color, background: background }}

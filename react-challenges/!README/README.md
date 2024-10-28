@@ -33,3 +33,7 @@ React erlaubt es dir, auf Benutzerinteraktionen (z. B. Klicken eines Buttons) zu
 Das sorgt dafür, dass wir eine Komponente in anderen Dateien importieren können, wenn nötig. Zum Beispiel wird sie woanders in der App benutzt.
 
 ## Hook
+
+## children-Prop
+
+Das children-Prop in React ist ein spezielles Prop, das alle Inhalte repräsentiert, die zwischen den öffnenden und schließenden Tags einer Komponente stehen. Es ermöglicht dir, beliebige Inhalte in eine Komponente einzufügen, ohne diese Inhalte explizit als separate Props zu übergeben.
